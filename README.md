@@ -37,5 +37,18 @@ Para transferir um arquivo do servidor para o seu computador, use o seguinte com
 Substitua `<caminho_do_arquivo_no_servidor>` pelo caminho para o arquivo no servidor e `<caminho_do_destino_local>` pelo caminho para o diretório em seu computador onde você deseja armazenar o arquivo.
 
 
+## Comando `ssh -i`
+
+O comando `ssh -i` é usado para especificar a localização do arquivo de chave privada que será usada para autenticar a conexão SSH. 
+
+Por padrão, o SSH usa a chave privada do usuário que está fazendo a conexão, geralmente localizada na pasta `~/.ssh/id_rsa`. No entanto, se você tiver várias chaves privadas em sua máquina, ou se a chave que você deseja usar estiver em uma localização diferente, pode usar o comando `ssh -i` para especificar a localização do arquivo de chave privada.
+
+A sintaxe básica do comando `ssh -i` é a seguinte:
+
+    ssh -i <caminho_para_arquivo_de_chave_privada> <nome_de_usuario>@<endereco_IP_do_servidor>
+
+Substitua `<caminho_para_arquivo_de_chave_privada>` pelo caminho para o arquivo de chave privada que você deseja usar, e continue com a sintaxe normal do comando SSH para se conectar ao servidor remoto.
+
+É importante observar que a chave privada especificada pelo comando `ssh -i` deve corresponder à chave pública registrada no servidor remoto para o usuário que você está usando para fazer a conexão. Caso contrário, a autenticação falhará e você não poderá fazer login no servidor.
 
 
