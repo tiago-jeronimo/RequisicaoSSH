@@ -1,4 +1,4 @@
-# Acesso seguro e remoto ao Linux com SSH!
+# Acesso seguro e remoto ao Linux com SSH
 
 O SSH (Secure Shell) é uma ferramenta de linha de comando que permite o acesso seguro a um servidor Linux remotamente. Com o SSH, você pode se conectar a um servidor Linux de qualquer lugar do mundo, desde que tenha as credenciais de login corretas.
 
